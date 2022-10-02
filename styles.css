@@ -24,6 +24,10 @@
     gap: 10px
 }
 
+.link {
+    text-decoration: none;
+}
+
 .title-emotion-container {
     color: white;
     padding: 10%;
@@ -125,8 +129,4 @@
     align-items: center;
     align-content: space-between;
     padding: 15px;
-}
-
-.link {
-    text-decoration: none;
 }
