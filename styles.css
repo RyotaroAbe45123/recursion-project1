@@ -122,50 +122,10 @@
     color: black;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
     align-content: space-between;
     padding: 15px;
 }
-
-
-/* .card-title {
-    font-weight: 2000;
-}
-
-.card-description {
-    font-weight: bold;
-} */
-
-/* .header1 {
-    height: 20px;
-    background-color: #CBCBCB;
-} */
-
-/* .container .component {
-    padding: 20%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-} */
-/*
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-    color: black;
-}
-
-.flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    color: black;
-    /* padding: 50px; */
 
 .link {
     text-decoration: none;
