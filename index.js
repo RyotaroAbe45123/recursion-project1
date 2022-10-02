@@ -41,7 +41,6 @@ class EmotionObject{
             </div>
         `
         return htmlString;
-        // return card;
     }
 }
 
@@ -115,11 +114,8 @@ const emotions = [
 const createOnomatopeCard = (emotion) => {
     const innerDiv = document.createElement("div")
     innerDiv.innerHTML = emotion.getHtmlContainerString()
-    // innerDiv.innerHTML = "<p>a</p>"
     return innerDiv
 }
-
-// const createTitleContainerComponent = (emotion) => {}
 
 const createTitleContainer = (emotions) => {
     const innerDiv = document.createElement("div")
@@ -146,8 +142,6 @@ const createTitleContainer = (emotions) => {
     return innerDiv
 }
 
-// console.log(emotions.map((emotion) => emotion.getOnomatopoeiaWords()))
-
 const root = document.getElementById("root");
 
 const header = document.createElement("div")
@@ -168,24 +162,17 @@ titleContainerComponent.append(title);
 
 titleContainerComponent.append(createTitleContainer(emotions))
 
-// const emotaionContainer = document.createElement("div");
-// emotionContainer.className = "emotion-container"
-// root.append(emotionContainer)
-
-
 emotions.map((emotion) => {
     let component = document.createElement("div");
     component.classList.add("emotion-container", emotion.color);
     component.id = `sec-${emotion.emotion}`
 
     let componentTitle = document.createElement("h2");
-    // componentTitle.classList.add("")
     componentTitle.innerHTML = emotion.emotion.toUpperCase();
     let componentDescription = document.createElement("h3");
     componentDescription.innerHTML = emotion.description;
 
     let cardGrid = document.createElement("div");
-    // cardContainer.className = "card-container"
     cardGrid.classList.add("card-grid");
     component.append(componentTitle);
     component.append(componentDescription);
@@ -193,24 +180,11 @@ emotions.map((emotion) => {
 
     emotion.getOnomatopoeiaWords().map((word) => {
         let cardContainer = document.createElement("div");
-        // card.classList.add("card");
         cardContainer.classList.add("card-container")
-        // card.className = "card"
-        // j.innerHTML = word.word
         cardGrid.append(cardContainer);
-
-        // let card = document.createElement("div");
-        // card.classList.add("card");
-        // card.classList.add("card");
-        // card.className = "card"
-        // j.innerHTML = word.word
-        // cardContainer.append(card);
 
         let cardContent = document.createElement("div");
         cardContent.classList.add("card-content");
-        // cardContent.innerHTML = "<div>div</div>"
-        // card.append(cardContent);
-        // cardContainer.append(cardContent)
 
         let cardTitle = document.createElement("h3");
         cardTitle.classList.add("card-title")
@@ -222,39 +196,15 @@ emotions.map((emotion) => {
 
         cardContent.append(cardTitle);
         cardContent.append(cardDescription);
-        // cardContent.append(cardDescription);
 
         let cardImage = document.createElement("img");
         cardImage.classList.add("image");
         cardImage.src = word.pictureUrl;
         cardImage.alt = word.word;
-        // cardImage.fallbackSrc = "thpps://via.placeholer.com/100"
 
-        // card.append(cardImage)
         cardContainer.append(cardContent);
         cardContainer.append(cardImage);
-        // card.append(cardContent);
-        // cardContent.append(cardImage)
-        // cardContent.append(cardImage);
-        // cardContent.append(cardImage);
-        // let c = document.createElement("div");
-        // c.classList.add("c");
-        // let t = document.createElement("h3");
-        // t.innerHTML = word.word;
-        // let d = document.createElement("h6");
-        // d.innerHTML = word.defintion;
-        // let i = document.createElement("img");
-        // i.innerHTML = word.pictureUrl;
     })
 
     root.append(component)
 })
-
-// const b = document.createElement("div")
-// b.className = "b"
-// root.append(b)
-// const c = document.createElement("div")
-// c.className = "c"
-// root.append(c)
-// element.innerHTML = emotions[0].getHtmlContainerString()
-// emotions.map((emotion) => element.append(createOnomatopeCard(emotion)))
