@@ -1,0 +1,172 @@
+.header {
+    height: 20px;
+    background-color: #CBCBCB;
+}
+
+.title-container {
+    height: 100%;
+    padding: 15%;
+    padding-top: 0;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    line-height: 3em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px
+}
+
+.title-emotion-container {
+    color: white;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px
+}
+
+.title-emotion-container.red {
+    background-color: red;
+}
+.title-emotion-container.yellow {
+    background-color: yellow;
+}
+.title-emotion-container.beige {
+    background-color: beige;
+}
+.title-emotion-container.grey {
+    background-color: grey;
+}
+.title-emotion-container.purple {
+    background-color: purple;
+}
+.title-emotion-container.green {
+    background-color: green;
+}
+.title-emotion-container.orange {
+    background-color: orange;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+.title-emotion-image {
+    margin-top: 10px;
+}
+
+.emotion-container {
+    background-color: #CBCBCB;
+    color: white;
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.emotion-container.red {
+    background-color: red;
+}
+.emotion-container.yellow {
+    background-color: yellow;
+}
+.emotion-container.beige {
+    background-color: beige;
+}
+.emotion-container.grey {
+    background-color: grey;
+}
+.emotion-container.purple {
+    background-color: purple;
+}
+.emotion-container.green {
+    background-color: green;
+}
+.emotion-container.orange {
+    background-color: orange;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 100px;
+    margin-top: 30px;
+}
+
+.card-container {
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content {
+    color: black;
+    font-weight: bold;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    align-content: space-between;
+    padding: 15px;
+}
+
+
+/* .card-title {
+    font-weight: 2000;
+}
+
+.card-description {
+    font-weight: bold;
+} */
+
+/* .header1 {
+    height: 20px;
+    background-color: #CBCBCB;
+} */
+
+/* .container .component {
+    padding: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+} */
+/*
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    /* padding: 50px; */
+
+.link {
+    text-decoration: none;
+}
